@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="new.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To-Do list</title>
+  </head>
+  <body>
+    <div class="to-do-list">
+      <h1>Sticky Notes <i class='bx bxs-pizza'></i></h1>
+
+     <!--<link rel="stylesheet" href="styles.css">-->
+        <div id="clock">8:10:45</div>
+     
+        
+    </body>
+  <div class="row">
+        <input type="text" id="input-box" placeholder="Add your text" />
+        <input type="date" id="due-date" class="due-date" />
+
+      </div>
+      <div>
+      <div class="search-box">
+        <div class="i-box">
+            <input type="text" id="search-box" placeholder="Search tasks" class="search-input"/>
+      <a href="#" class="icon">
+        <i class="fas fa-search"></i></a>
+        </div>
+    </div>
+        <button id="btn" onclick="createTask()">Add</button>
+        <select id="category-select">
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+            <option value="study">Study</option>
+          </select>
+          <button id="sort-btn" onclick="sortTasksByDate()">Sort</button>
+    </div>
+
+      <ul id="list-container">
+       
+      </ul>
+    </div>
+
+    <script src="new.js"></script>
+  </body>
+</html>
